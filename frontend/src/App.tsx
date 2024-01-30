@@ -1,7 +1,13 @@
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Onboarding from "./pages/onboarding/Onboarding"
 
+function App() {
   return (
-    <p className='text-sky-500'>Hi</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Onboarding />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
